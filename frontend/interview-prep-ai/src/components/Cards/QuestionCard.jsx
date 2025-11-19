@@ -11,7 +11,8 @@ function QuestionCard({
   const [isExpanded, setIsExpanded] = useState(false);
   const [height, setHeight] = useState(0);
   const contnetRef = useRef(null);
-  useEffect(() => {
+  useEffect(() => { 
+    
     if (isExpanded) {
       const contentHeight = contnetRef.current.scrollHeight;
       setHeight(contentHeight + 10);
